@@ -17,7 +17,7 @@ const Relationship = () => {
           className="w-[150px] h-[120px] rotate-45 opacity-75"
         />
       </div>
-      <div className="flex gap-24 pt-10">
+      <div className="flex gap-24 pt-10 flex-wrap">
         <div className="bg-blue-400 bg-opacity-70 w-[400px] h-[150px] rounded-tl-3xl rounded-br-3xl flex gap-2 flex-col  text-center justify-center">
           <div className="flex gap-10 items-center pl-10">
             <p className="bg-white shadow-md text-red-400 rounded-[50%] w-[40px] h-[40px] text-center flex items-center justify-center">
@@ -31,8 +31,8 @@ const Relationship = () => {
           </p>
         </div>
 
-        <div className="bg-blue-300 bg-opacity-70 w-[400px] h-[150px] rounded-tl-3xl rounded-br-3xl flex gap-2 flex-col  text-center justify-center">
-        <div className="flex gap-10 items-center pl-10">
+        <div className="bg-blue-300 bg-opacity-70 w-[400px] h-[150px] rounded-tl-3xl rounded-br-3xl flex gap-2 flex-col  text-center justify-center ">
+        <div className="flex gap-10 items-center pl-10 flex-wrap">
             <p className="bg-white shadow-md text-red-400 rounded-[50%] w-[40px] h-[40px] text-center flex items-center justify-center">
               2
             </p>
@@ -44,7 +44,7 @@ const Relationship = () => {
           </p>
         </div>
       </div>
-      <div className="flex gap-10 pt-10 pl-20">
+      <div className="flex gap-10 pt-10 pl-20 flex-wrap">
         <div className="bg-red-300 bg-opacity-70 w-[450px] h-[150px] rounded-tl-3xl rounded-br-3xl flex gap-2 flex-col  text-center justify-center">
         <div className="flex gap-10 items-center pl-10">
             <p className="bg-white shadow-md text-red-400 rounded-[50%] w-[40px] h-[40px] text-center flex items-center justify-center">
