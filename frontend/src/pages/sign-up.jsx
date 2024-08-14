@@ -16,14 +16,14 @@ export default function SignUp(){
          </img>
       <div className=" flex items-center justify-center flex-col ">
      
-        <div className=" bg-[#0A0B0C] p-5 flex flex-col items-center justify-center rounded-md text-white gap-5">
+        <div className=" bg-[#0A0B0C] md:10 p-5 flex flex-col items-center justify-center rounded-md text-white gap-5">
          <h1 className="font-bold text-[30px]">Sign Up As</h1>
          <button className="w-[250px] bg-[#686666] p-2 rounded-sm">
-            <Link>Photographer</Link>
+            <Link to="/phot" >Photographer</Link>
          </button>
          <h2 className="">Or</h2>
          <button className="w-[250px] bg-[#686666] p-2 rounded-sm">
-            <Link>Client</Link>
+            <Link to= "/client">Client</Link>
          </button>
          <button
             className="bg-[#B60418] text-white h-[40px] w-[100px] "
