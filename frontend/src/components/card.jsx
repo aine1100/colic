@@ -2,7 +2,7 @@ import Manzi from "../images/user.png";
 export default function Cards() {
   return (
     <div
-      className="flex  flex-1 flex-col text-center  bg-[#B60418] max-w-[500px] md:w-[500px] p-5 rounded-md h-[80px] text-white gap-5"
+      className="flex  flex-1 flex-col text-center  bg-[#B60418] max-w-[500px] md:w-[500px] p-5 rounded-md max-h-[300px] text-white gap-5 text-wrap"
       style={{ minHeight: "100px", minWidth: "100px" }} 
     >
       <p>
