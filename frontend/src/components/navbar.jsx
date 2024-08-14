@@ -30,7 +30,9 @@ const Navbar = () => {
           <Link className={getLinkClasses("/about")} to="/about">About Us</Link>
           <Link className={getLinkClasses("/contact")} to="/contact">Contact</Link>
         </ul>
-        <button className="h-10 w-24 text-white bg-[#B60418] hover:bg-[#8B0313] transition-all duration-300 md:mb-10">Sign in</button>
+        <button className="h-10 w-24 text-white bg-[#B60418] hover:bg-[#8B0313] transition-all duration-300 md:mb-10">
+          <Link to="/sign" >Sign in</Link>
+        </button>
       </div>
       <FaBars className="cursor-pointer md:hidden text-white text-2xl mb-10" onClick={toggleMenu} />
     </div>
