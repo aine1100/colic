@@ -11,7 +11,7 @@ className="max-h-[100%]"
         }}
       >
         <Navbar/>
-     <div className="flex xl:flex-row flex-col p-10 items-center justify-center">
+     <div className="flex xl:flex-row flex-col pl-10 pr-10 pb-10 items-center justify-center">
      <div className="flex flex-col text-white gap-10">
           <h2 className="text-opacity-80 text-white">Testimonials</h2>
           <h2 className="text-[40px] font-semibold ">

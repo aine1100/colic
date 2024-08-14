@@ -1,5 +1,6 @@
 import Logo from "../images/logo.png";
 import Bg from "../images/bg.png";
+import { Link } from "react-router-dom";
 export default function SignUpClient() {
   return (
     <div
@@ -40,7 +41,8 @@ export default function SignUpClient() {
             className="bg-[#B60418] text-white h-[40px] max-w-[350px] md:w-[350px] "
             style={{ minHeight: "50px", lineHeight: "40px",minWidth:"100px" }}
           >
-         Sign-up
+            <Link to= "/user">         Sign-up
+            </Link>
           </button>
           <p>New to Copic ? Sign up now</p>
 
