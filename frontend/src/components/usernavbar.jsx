@@ -21,13 +21,13 @@ const UserNavbar = () => {
   return (
     <div className="w-full p-4 md:p-4 flex items-center justify-between top-0 z-50 bg-transparent">
       <img src={Logo} className="h-28 md:h-44" alt="Logo" />
-      <div className={`fixed inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center gap-12 transition-transform transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'} md:transform-none md:static md:flex md:flex-row md:gap-8 md:bg-transparent`}>
+      <div className={`fixed inset-0 bg-black bg-opacity-95 flex flex-col items-center justify-center gap-12 transition-transform transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'} md:transform-none md:static md:flex md:flex-row md:gap-8 md:bg-transparent`}>
         <button className="absolute top-4 right-4 text-2xl md:hidden text-white" onClick={toggleMenu}>
           <FaTimes />
         </button>
         <ul className="flex flex-col text-white font-semibold md:text-base items-center gap-6 md:flex-row md:gap-8 md:mb-10">
-          <Link className={getLinkClasses("/")} to="/">Home</Link>
-          <Link className={getLinkClasses("/")} to="/">Gallery</Link>
+          <Link className={getLinkClasses("/user")} to="/user">Home</Link>
+          <Link className={getLinkClasses("/gallery")} to="/gallery">Gallery</Link>
           <Link className={getLinkClasses("/")} to="/">My Account</Link>
           <FaBell className='text-red-500'/>
 

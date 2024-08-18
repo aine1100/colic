@@ -11,6 +11,7 @@ import SignUpClient from './pages/clientSignUp'
 import Choices from './pages/field'
 import Details from './pages/personaldetails'
 import UserHome from './pages/userHome'
+import UserGallery from './pages/gallery'
 
 const routes=createBrowserRouter([
   {
@@ -51,6 +52,9 @@ const routes=createBrowserRouter([
  },{
   path:"/user",
   element:<UserHome/>
+ },{
+  path:"/gallery",
+  element:<UserGallery/>
  }
 ])
 function App() {

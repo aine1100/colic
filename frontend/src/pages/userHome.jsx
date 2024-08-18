@@ -33,12 +33,12 @@ export default function UserHome() {
           <h2 className="text-[40px] font-bold">
             Choose your own Photographer
           </h2>
-          <p className="text-center opacity-80 text-[25px]">
+          <p className="text-center  text-[25px]">
             We connect you to Rwanda’s
             <br /> best Photographers in just one simple Click.
             <br /> Explore Photographers now
           </p>
-          <button className="h-10 w-24 text-white bg-[#B60418] hover:bg-[#8B0313] transition-all duration-300  ">
+          <button className="h-10 w-24 text-white  bg-[#B60418] hover:bg-[#8B0313] transition-all duration-300  ">
             Explore
           </button>
         </div>

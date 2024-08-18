@@ -14,7 +14,6 @@ export default function Details() {
         backgroundRepeat: "no-repeat",
       }}
     >
-        <p>dush</p>
       <img
         src={Logo}
         className="w-[300px] flex items-start justify-start"
@@ -40,7 +39,7 @@ export default function Details() {
           className="bg-[#B60418] text-white h-[40px] max-w-[100px] flex items-center justify-center md:w-[100px] gap-2"
           style={{ minHeight: "50px", lineHeight: "40px", minWidth: "100px" }}
         >
-          <Link to= "/details">Next </Link>
+          <Link to= "/user">Next </Link>
           <FaArrowRight />
         </button>
         <p className="pt-5">
