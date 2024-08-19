@@ -19,7 +19,7 @@ const UserNavbar = () => {
   };
 
   return (
-    <div className="w-full p-4 md:p-4 flex items-center justify-between top-0 z-50 bg-transparent">
+    <div className="w-full pt-4 pr-4 pl-4  flex items-center justify-between top-0 z-50 bg-transparent">
       <img src={Logo} className="h-28 md:h-44" alt="Logo" />
       <div className={`fixed inset-0 bg-black bg-opacity-95 flex flex-col items-center justify-center gap-12 transition-transform transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'} md:transform-none md:static md:flex md:flex-row md:gap-8 md:bg-transparent`}>
         <button className="absolute top-4 right-4 text-2xl md:hidden text-white" onClick={toggleMenu}>
