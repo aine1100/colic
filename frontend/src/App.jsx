@@ -12,6 +12,7 @@ import Choices from './pages/field'
 import Details from './pages/personaldetails'
 import UserHome from './pages/userHome'
 import UserGallery from './pages/gallery'
+import ImageDetail from './pages/imageDetail'
 
 const routes=createBrowserRouter([
   {
@@ -55,6 +56,9 @@ const routes=createBrowserRouter([
  },{
   path:"/gallery",
   element:<UserGallery/>
+ },{
+  path:"/image/:id",
+  element:<ImageDetail/>
  }
 ])
 function App() {
