@@ -4,15 +4,15 @@ import { IoSettingsSharp } from "react-icons/io5";
 import sideData from './side.json';
 
 const icons = {
-    FaRegUserCircle: <FaRegUserCircle className="w-[15px] h-[15px]"/>,
-    FaRegCalendar: <FaRegCalendar className="w-[15px] h-[15px]"/>,
-    FiMessageSquare: <FiMessageSquare className="w-[15px] h-[15px]"/>,
-    IoSettingsSharp: <IoSettingsSharp className="w-[15px] h-[15px]"/>,
+    FaRegUserCircle: <FaRegUserCircle className="w-[15px] h-[15px]" />,
+    FaRegCalendar: <FaRegCalendar className="w-[15px] h-[15px]" />,
+    FiMessageSquare: <FiMessageSquare className="w-[15px] h-[15px]" />,
+    IoSettingsSharp: <IoSettingsSharp className="w-[15px] h-[15px]" />,
 };
 
 export default function Sidenav() {
     return (
-        <div className="bg-[#000] w-[304px]">
+        <div className="bg-[#000] w-[304px] h-screen top-0 bottom-0">
             <img className="w-[304px] h-[86px]" src="/copic.png" alt="logo" />
             <div className="flex flex-col">
                 {sideData.map((item, index) => (

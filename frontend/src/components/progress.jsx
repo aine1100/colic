@@ -2,21 +2,16 @@ import { Link } from "react-router-dom";
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import Calendar from 'react-calendar'
-
+import { ProgressTable } from './table.jsx';
 export default function Progress() {
 
     const percentage = [75, 84];
 
     return (
         <div className="space-y-[2rem]">
-            <div className="flex items-center justify-between space-x-[5rem]">
+            <div className="flex pr-[1.5rem] items-center justify-center space-x-[33.5rem]">
                 <p className="font-semibold text-[16px]">Track your Progress</p>
-                <Link 
-                    className={`text-white underline text-[10px]`}
-                    to="/progress"
-                >
-                    See all
-                </Link>
+                <Link className={`text-white underline text-[14px]`} to="/progress">See all</Link>
             </div>
             <div className="flex space-x-[5rem]">
                 <div className="flex rounded-[10px] items-center w-[330px] p-[10px] h-[120px] space-x-[1rem] bg-[#0A0B0C]">
@@ -57,6 +52,7 @@ export default function Progress() {
                 </div>
 
             </div>
+            <ProgressTable />
         </div>
     );
 }

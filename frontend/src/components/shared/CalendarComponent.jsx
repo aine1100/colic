@@ -1,37 +1,59 @@
-import React, { useState } from 'react'
-import Calendar from 'react-calendar'
-import { FaAngleRight, FaAngleLeft, FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa'
+import React, { useState } from 'react';
+import { Calendar } from 'react-calendar';
+import 'react-calendar/dist/Calendar.css'; // Import CSS for the calendar
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-const CalendarComponent = () => {
-    const [ date, setDate ] = useState(new Date())
-    const onChange = (newDate) => {
-        setDate(newDate)
-    }
+const Time = () => {
+  const [date, setDate] = useState(new Date());
 
   return (
-    <div className="p-6 max-w-md mx-auto bg-gray-700 bg-opacity-20 rounded-xl shadow-lg">
-      <Calendar
-                onChange={setDate}
-                value={date}
-                className="p-4 bg-grey-700 rounded-lg shadow-md border border-gray-200"
-                
-                // Customizing the navigation label (Month and Year)
-                navigationLabel={({ date, label }) => (
-                    <div className="text-lg font-bold text-gray-800">
-                        {label} {/* Displays the month and year */}
-                    </div>
-                )}
-                
-                // Customizing the previous and next labels (arrows)
-                prevLabel={<span className="text-xl text-gray-700">‹</span>}
-                nextLabel={<span className="text-xl text-gray-700">›</span>}
-                
-                // Customizing the previous and next year labels (double arrows)
-                prev2Label={<span className="text-xl text-gray-700">«</span>}
-                next2Label={<span className="text-xl text-gray-700">»</span>}
-            />
+    <div style={styles.container}>
+      <div style={styles.calendarContainer}>
+        <Calendar
+          onChange={setDate}
+          value={date}
+          prevLabel={<FaChevronLeft color='blue' />}
+          nextLabel={<FaChevronRight color='blue' />}
+          tileClassName={({ date, view }) =>
+            date.toISOString().split('T')[0] === new Date().toISOString().split('T')[0]
+              ? 'selectedDay'
+              : null
+          }
+        />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default CalendarComponent
+const styles = {
+  container: {
+    paddingTop: '1rem',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '48vh',
+    backgroundColor: '#0A0B0C',
+  },
+  calendarContainer: {
+    width: '90%',
+    maxWidth: '400px',
+    border: '0px',
+    borderRadius: '10px',
+    padding: '10px',
+    backgroundColor: '#0A0B0C',
+  },
+};
+
+// You can add some CSS for the selected day
+const style = document.createElement('style');
+style.innerHTML = `
+  .selectedDay {
+    background-color: blue !important;
+    color: '#0A0B0C' !important;
+    border-radius: 50%;
+  }
+`;
+document.head.appendChild(style);
+
+export default Time;
+
