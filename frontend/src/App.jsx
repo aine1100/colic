@@ -13,6 +13,7 @@ import Details from './pages/personaldetails'
 import UserHome from './pages/userHome'
 import UserGallery from './pages/gallery'
 import ImageDetail from './pages/imageDetail'
+import Dashpage from './pages/dashboard'
 
 const routes=createBrowserRouter([
   {
@@ -59,6 +60,9 @@ const routes=createBrowserRouter([
  },{
   path:"/image/:id",
   element:<ImageDetail/>
+ },{
+  path:"/dashboard",
+  element:<Dashpage/>
  }
 ])
 function App() {
