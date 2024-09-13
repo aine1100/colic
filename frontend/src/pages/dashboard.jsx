@@ -3,7 +3,7 @@ import Sidenav from "../components/sidenav"
 
 export default function Dashpage() {
     return(
-        <main className="bg-[#040405] flex">
+        <main className="bg-black flex md:flex-row flex-col  pb-5">
             <Sidenav />
             <Dashmain />
         </main>

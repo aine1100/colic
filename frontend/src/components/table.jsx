@@ -37,7 +37,7 @@ const TABLE_ROWS = [
 
 export function ProgressTable() {
   return (
-    <Card className="h-full w-[96%] overflow-scroll bg-[#0A0B0C] text-white rounded-lg pt-4">
+    <Card className="h-full w-[96%]  bg-[#0A0B0C] text-white rounded-lg pt-4">
       <div className="flex justify-between items-center px-4 mb-4">
         <Typography variant="h6" color="white">
           Track your Progress
