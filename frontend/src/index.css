@@ -5,3 +5,21 @@
 *{
     font-family: "Mulish", sans-serif;
 }
+
+@layer components{
+ .rbc-off-range{
+    @apply text-[#fff]
+ }
+ .rbc-off-range-bg{
+    @apply bg-[#B50418]
+ }
+ .rbc-today{
+    @apply bg-[#000000] text-white;
+ }
+ .rbc-toolbar-label{
+    @apply  text-white font-bold;
+ }
+ .rbc-btn-group > button{
+    @apply bg-blue;
+ }
+}

@@ -15,6 +15,9 @@ import UserGallery from './pages/gallery'
 import ImageDetail from './pages/imageDetail'
 import Dashpage from './pages/dashboard'
 import Chatdash from './pages/chatdash'
+import SingleChat from './pages/singleChat'
+import Calendar from './pages/calendar';
+import Profile from './pages/Profile'
 
 const routes=createBrowserRouter([
   {
@@ -67,7 +70,20 @@ const routes=createBrowserRouter([
  },{
   path:"/chat",
   element:<Chatdash/>
+ },
+ {
+ path:"/chatone",
+ element:<SingleChat/>
+ },
+ {
+  path:"/calendar",
+  element:<Calendar/>
+ },
+ {
+  path:"/profile",
+  element:<Profile/>
  }
+
 ])
 function App() {
 
