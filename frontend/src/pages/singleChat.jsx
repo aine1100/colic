@@ -16,9 +16,9 @@ const SingleChat= () =>{
                 <p className="text-white font-bold">Ange Vanessa</p>
             </div>
           <div className="flex mr-20 gap-5">
-         <FaVideo className="text-[#ffffff] text-[180%]"/>
-         <FaPhoneAlt className="text-[#ffffff] text-[180%]" />
-         <FaEllipsisV className="text-[#ffffff] text-[180%]" />
+         <FaVideo className="text-[#ffffff] text-[150%]"/>
+         <FaPhoneAlt className="text-[#ffffff] text-[150%]" />
+         <FaEllipsisV className="text-[#ffffff] text-[150%]" />
           </div>
         </div>
         <div className="bg-[#0a0b0c] flex flex-col w-full h-[100%] mt-5 relative">

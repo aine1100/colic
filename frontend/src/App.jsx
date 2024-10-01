@@ -18,6 +18,10 @@ import Chatdash from './pages/chatdash'
 import SingleChat from './pages/singleChat'
 import Calendar from './pages/calendar';
 import Profile from './pages/Profile'
+import Settings from './pages/settings'
+import Styles from './pages/Styles'
+import Progress from './pages/Progress'
+
 
 const routes=createBrowserRouter([
   {
@@ -82,8 +86,19 @@ const routes=createBrowserRouter([
  {
   path:"/profile",
   element:<Profile/>
+ },
+ {
+  path:"/settings",
+  element:<Settings/>
+ },
+ {
+  path:"/styles",
+  element:<Styles/>
+ },
+ {
+  path:"/progress",
+  element:<Progress/>
  }
-
 ])
 function App() {
 

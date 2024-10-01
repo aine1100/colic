@@ -40,7 +40,7 @@ export const Chatdash = () => {
           </div>   
         </div>
 
-     <div className="flex flex-col bg-soft_black w-[50%] max-h-[100%] overflow-y-auto container ">
+     <div className="flex flex-col bg-[#040405] w-[50%] max-h-[100%] overflow-y-auto container ">
       <div  className="rounded-full flex gap-4 items-center bg-[#ADADAD] w-[80%] mx-auto p-1 mt-5">
         <FaSearch className="ml-4"/>
         <input type="text" placeholder="Search for client" className="bg-[#ADADAD] rounded-full outline-none placeholder-white"/>
