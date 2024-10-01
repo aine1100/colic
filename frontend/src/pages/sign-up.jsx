@@ -16,7 +16,7 @@ export default function SignUp(){
          </img>
       <div className=" flex items-center justify-center flex-col ">
      
-        <div className=" bg-[#0A0B0C] md:10 p-5 flex flex-col items-center justify-center rounded-md text-white gap-5">
+        <div className=" bg-[#0A0B0C] md:10 p-5 flex flex-col items-center justify-center rounded-md text-white gap-5 lg:w-[30%]">
          <h1 className="font-bold text-[30px]">Sign Up As</h1>
          <button className="w-[250px] bg-[#686666] p-2 rounded-sm">
             <Link to="/phot" >Photographer</Link>

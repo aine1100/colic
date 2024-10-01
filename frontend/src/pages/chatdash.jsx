@@ -1,28 +1,22 @@
-import { FaAudioDescription, FaMicrophone, FaVideo } from "react-icons/fa";
+// import { FaAudioDescription, FaMicrophone, FaVideo } from "react-icons/fa";
 import Sidenav from "../components/sidenav";
-import UserImage from "../images/user.png"
 
 export const Chatdash = () => {
+  const userData=[
+    {id:1,  names:"Kagabo Jean Remy"},
+    {id:2,  names:"Uwase Vanessa"},
+    {id:3,  names:"Andy Melvin"},
+    {id:4,  names:"Beyonce Priase"},
+    {id:5, names:"Bwiza Official" },
+    {id:6, names:"Butera Knowless"},
+    {id:7, names:"Anifa Gaella"},
+    {id:8, names:"Keza Joanna"},
+    {id:9, names:"Mike Peter"}
+  ]
+
   return (
-    <div className="bg-black w-full h-screen text-white flex gap-5">
+    <div className="bg-black w-full h-screen text-white">
                 <Sidenav/>
-              <div className="flex flex-col gap-10 bg-[#817575] bg-opacity-10 rounded-md  ">
-              <div className="flex justify-center items-start bg-black p-7 ">
-                   <div className="flex gap-12 items-center justify-center">
-                   <img src={UserImage} alt="" className="w-20 h-20 rounded-[50%]" />
-                   <p className="text-[25px]">Dave Robinson</p>
-
-                   </div>
-                   <div className="flex gap-20 items-center mt-5 pl-[600px] justify-center">
-                  <FaVideo className="text-[40px]"/>
-                  <FaMicrophone className="text-[40px]"/>
-                   </div>
-                </div>
-                <div className=" rounded-md ">
-
-                </div>
-
-              </div>
     </div>
   )
 }
