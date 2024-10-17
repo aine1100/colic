@@ -21,7 +21,8 @@ import Profile from './pages/Profile'
 import Settings from './pages/settings'
 import Styles from './pages/Styles'
 import Progress from './pages/Progress'
-
+import userData from './pages/Users';
+import ErrorBoundary from './pages/ErrorBoundary'
 
 const routes=createBrowserRouter([
   {
@@ -71,13 +72,14 @@ const routes=createBrowserRouter([
  },{
   path:"/dashboard",
   element:<Dashpage/>
- },{
-  path:"/chat",
-  element:<Chatdash/>
  },
  {
- path:"/chatone",
- element:<SingleChat/>
+  path:"/chat",
+  element:<Chatdash users={userData}/>
+ },
+ {
+  path:"/chat/:id",
+  element:<SingleChat users={userData}/>
  },
  {
   path:"/calendar",
@@ -98,6 +100,10 @@ const routes=createBrowserRouter([
  {
   path:"/progress",
   element:<Progress/>
+ },
+ {
+  path:"/error",
+  element:<ErrorBoundary/>
  }
 ])
 function App() {
@@ -105,6 +111,7 @@ function App() {
   return (
       <div>
         <RouterProvider router={routes}/>
+  
           </div>   
   )
 }

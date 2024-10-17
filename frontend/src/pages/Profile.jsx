@@ -30,22 +30,22 @@ const Profile = () => {
         <form className="ml-20 mt-20">
          <div className="flex gap-5 mb-5 items-center ">
              <label htmlFor="name" className="text-[#ffff]">Username</label>
-             <input type="text" value="Ange Vanessa" id="name" className="py-1 ml-2 bg-[#303030] text-[#d9d9d980] " />
+             <input type="text" value="Ange Vanessa" id="name" className="py-1 ml-2 bg-[#303030] text-[#d9d9d980] outline-none " />
              <button className="bg-[#B50418] py-1 px-7"><FaPencilAlt className="text-[#ffff]"/></button>
          </div>         
          <div className="flex gap-5 mb-5 items-center">
              <label htmlFor="email" className="text-[#ffff]">Email</label>
-             <input type="email" value="Ange25@gmail.com" id="email"  className="py-1 ml-10  bg-[#303030] text-[#d9d9d980]"/>
+             <input type="email" value="Ange25@gmail.com" id="email"  className="py-1 ml-10  bg-[#303030] text-[#d9d9d980] outline-none"/>
              <button className="bg-[#B50418] py-1 px-7"><FaPencilAlt className="text-[#ffff]"/></button>
          </div>         
          <div className="flex gap-5 mb-5 items-center">
              <label htmlFor="password"  className="text-[#ffff]">Password</label>
-             <input type="password" id="password" value="ange25vanessa"  className="py-1 ml-2  bg-[#303030] text-[#d9d9d980]"/>
+             <input type="password" id="password" value="ange25vanessa"  className="py-1 ml-2  bg-[#303030] text-[#d9d9d980] outline-none"/>
              <button className="bg-[#B50418] py-1 px-7"><FaPencilAlt className="text-[#ffff]"/></button>
          </div>   
          <div className="flex gap-5 mb-5 items-center">
              <label htmlFor="Role" className="text-[#ffff]">Role</label>
-             <input type="text" id="Role" value="Photographer"  className="py-1 ml-12  bg-[#303030] text-[#d9d9d980]"/>
+             <input type="text" id="Role" value="Photographer"  className="py-1 ml-12  bg-[#303030] text-[#d9d9d980] outline-none"/>
              <button className="bg-[#B50418] py-1 px-7"><FaPencilAlt className="text-[#ffff]"/></button>
          </div>               
         </form>

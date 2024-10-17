@@ -1,4 +1,6 @@
 
+
+
 const MultiStepProgressBar = () => {
   return (
     <div className="flex w-auto flex-col h-auto bg-[#0A0B0C] rounded-md pb-4 pt-3 pl-4 pr-4 gap-3 items-center justify-center">
@@ -67,6 +69,7 @@ const MultiStepProgressBar = () => {
           </div>
         </div>
       </div>
+      
       <button className="bg-blue-500 w-[150px] h-10 rounded-3xl text-white flex items-center justify-center">See all</button>
     </div>
   );

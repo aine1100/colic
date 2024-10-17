@@ -55,7 +55,7 @@ export default function Sidenav() {
                         onClick={() => handleLinkClick(item.path)} // Set active state on click
                         className={`w-[304px] h-[2.65rem] flex items-center gap-[0.5rem] text-[12px] ${
                             activeLink === item.path
-                                ? 'text-white border-l-[#86070C] border-l-[4px] ' // Active link styles: red border, white text, darker background
+                                ? ' bg-[#8D282816] text-white border-l-[#86070C] border-l-[5px] ' // Active link styles: red border, white text, darker background
                                 : 'text-[#686868]' // Inactive link styles: grey text
                         } pl-[3rem]`} // Adjusted padding for better icon alignment
                     >
